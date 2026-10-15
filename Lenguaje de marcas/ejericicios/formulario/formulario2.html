@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario2</title>
+</head>
+<body>
+
+<h2>Sumar:</h2>
+
+<form>
+    <label>
+        Introduzzca el primer numero:
+        <input type="number" id="numero1">
+    </label>
+    <br>
+
+    <label>
+        Introduzca el segundo número:
+        <input type="number" id="numero2">
+    </label>
+    <br>
+
+    <button type="button" onclick="sumar()">SUMAR</button>
+</form>
+
+<p id="resultado"></p>
+
+<script>
+    function sumar() {
+        let numero1 = Number(document.getElementById("numero1").value);
+        let numero2 = Number(document.getElementById("numero2").value);
+
+        let resultado = numero1 + numero2;
+
+        document.getElementById("resultado").textContent =
+            "Resultado: " + resultado;
+    }
+</script>
+
+</body>
+</html>
